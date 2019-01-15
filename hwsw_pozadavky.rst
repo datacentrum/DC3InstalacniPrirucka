@@ -20,7 +20,7 @@ Momentálně jsou podporovány následující databázové stroje:
 
 - Microsoft SQL Server 2008+
 - Microfost SQL Azure
-- Oracle 11g + 
+- Oracle 12c+ 
 
 V případě, že je použit databázový server Oracle, je nutné zajistit, aby uživatel **DC3** měl nagrantovaná následující oprávnění:
 
@@ -34,13 +34,10 @@ Aplikační server
 
 Před vlastní instalací je nutné se ujistit, zda jsou na aplikačním serveru nainstalovány následující komponenty:
 
-- Microsoft .NET Framework verze 4.6.2 (`odkaz ke stažení <https://www.microsoft.com/en-us/download/details.aspx?id=53344>`__)
-- .NET Core 1.1.0 Windows Hosting installer (`odkaz ke stažení <https://aka.ms/dotnetcore_windowshosting_1_1_0>`__)
+- Microsoft .NET Framework verze 4.7 (`odkaz ke stažení <https://www.microsoft.com/en-us/download/details.aspx?id=53344>`__)
+- .NET Core 2.1.0 Windows Hosting installer (`odkaz ke stažení <https://aka.ms/dotnetcore_windowshosting_1_1_0>`__)
 - SQLSysClrTypes-x64.msi (`odkaz ke stažení <http://go.microsoft.com/fwlink/?LinkID=188392&clcid=0x409>`__)
 - ReportViewer.msi (`odkaz ke stažení <https://www.microsoft.com/en-us/download/details.aspx?id=45496>`__)
-- Oracle Client 11g x64\* (`odkaz ke stažení <http://www.oracle.com/technetwork/database/enterprise-edition/downloads/112010-win64soft-094461.html>`__)
-
-\*Pouze pokud je jako databázový server použit Oracle.
 
 Aplikační server dále musí být nakonfigurován v roli **Web server (IIS)**. V této roli je třeba zapnout minimálně následující balíčky:
 
