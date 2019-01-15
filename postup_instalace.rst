@@ -7,7 +7,7 @@ Instalace DC3 na produkční prostředí
 =====================================
 
 Následující text popisuje, jakým způsobem provést prvotní čistou instalaci DC3 do produkčního prostředí včetně vygenerování prázné databáze. 
-V případě, že potřebujete provést aktualizaci aplikace nebo obnovení ze zálohy, pokračujte na kapitolu :doc:`Aktualizace a obnovení DC3 </aktualizace-a-obnoveni>` 
+V případě, že potřebujete provést aktualizaci aplikace nebo obnovení ze zálohy, pokračujte na kapitolu :doc:`Aktualizace a obnovení DC3 <aktualizace-a-obnoveni>` 
 
 .. note:: Pokud si nejste jisti svým postupem nebo v případě složitějších instalací, kontaktujte vždy konzultanta společnosti DATACENTRUM systems & consulting a.s. 
 
