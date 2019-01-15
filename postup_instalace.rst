@@ -7,7 +7,7 @@ Instalace DC3 na produkční prostředí
 =====================================
 
 Následující text popisuje, jakým způsobem provést prvotní čistou instalaci DC3 do produkčního prostředí včetně vygenerování prázné databáze. 
-V případě, že potřebujete provést aktualizaci aplikace nebo obnovení ze zálohy, pokračujte na kapitolu :doc:`Aktualizace a obnovení DC3 </Instalace/aktualizace-a-obnoveni>` 
+V případě, že potřebujete provést aktualizaci aplikace nebo obnovení ze zálohy, pokračujte na kapitolu :doc:`Aktualizace a obnovení DC3 </aktualizace-a-obnoveni>` 
 
 .. note:: Pokud si nejste jisti svým postupem nebo v případě složitějších instalací, kontaktujte vždy konzultanta společnosti DATACENTRUM systems & consulting a.s. 
 
@@ -42,19 +42,19 @@ Službu je nutné nainstalovat do systému pomocí .NET Utility **InstallUtil.ex
 
 - Stisknout klávesu **Win + R** ->  zadat **cmd** a spustit tak příkazový řádek.
 
-.. image:: /img/RunCmd.png
+.. image:: /img/RunCmd.PNG
 
 - V příkazovém řádku přejít do adresáře **C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319**
 
-.. image:: /img/Cmd.png
+.. image:: /img/Cmd.PNG
 
 - Pomocí **InstalUtil.exe** nainstalovat službu **DC.DC3.Service.exe** umístěnou v instalačním adresáři DC3.
 
-.. image:: /img/InstsallUtil.png
+.. image:: /img/InstsallUtil.PNG
 
 - Služba byla úspěšně naistalována a objeví se v seznamu Windows služeb.
 
-.. image:: /img/Services.png
+.. image:: /img/Services.PNG
 
 .. _pripojeni_label:
 
@@ -71,11 +71,11 @@ Dále může DC3 provádět import / export dat z / do jiných systémů. V tako
 
 Oracle:
 
-.. image:: /img/Appsettings_oracle.png
+.. image:: /img/Appsettings_oracle.PNG
 
 MS SQL:
 
-.. image:: /img/Appsettings_sql.png
+.. image:: /img/Appsettings_sql.PNG
 
 Zašifrování připojovacího řetězce
 ------------------------------------
@@ -89,9 +89,9 @@ Proto je možné řetězec nechat v případě potřeby zašifrovat.
 - Příkaz vygeneruje soubor **enctypt.txt** se zašifrovanými připojovacími řetězci.
 - Ze souboru je možné vykopírovat část **EnctyptedData:** a vložit ji do souboru **appsettings.json** k odpovídajícím připojením.
 
-.. image:: /img/Encrypt.png
+.. image:: /img/Encrypt.PNG
 
-.. image:: /img/EncryptedSettings.png
+.. image:: /img/EncryptedSettings.PNG
 
 Příprava databáze
 ------------------------------------
@@ -110,7 +110,7 @@ DC3 umožňuje zasílat mailové notifikace a jiné zprávy. Pro využití této
 - Otevřít soubor **appsettings.json**
 - Upravit sekci **MailSettings**
 
-.. image:: /img/smtp.png
+.. image:: /img/smtp.PNG
 
 Konfigurace IIS
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -121,27 +121,27 @@ DC3 je webová aplikace a potřebuje pro svůj běh webový server. Následujíc
 - Založit nový aplikační pool **Application pools** -> **Add Application Pool** s názvem *DC3Pool*
 - Přepnout verzi .NET na **No Managed Code**
 
-.. image:: /img/Pool.png
+.. image:: /img/Pool.PNG
 
 - Přejít do **Advanced Settings** a nastavit volbu **Load User Profile** na **True**
 
-.. image:: /img/PoolAdvance.png
+.. image:: /img/PoolAdvance.PNG
 
 - Založit novou webovou aplikaci a nasměrovat ji na adresář s instalačními soubory DC3.
 
-.. image:: /img/AddApp.png
+.. image:: /img/AddApp.PNG
 
 - Vybrat správný pool
 
-.. image:: /img/AddApp2.png
+.. image:: /img/AddApp2.PNG
 
 - Otevřít soubor **DC.DC3.Service.exe.config** a nastavit v něm stejnou URL pod kterou poběží webová aplikace (typicky http://localhost/DC3).
 
-.. image:: /img/ServiceSettings.png
+.. image:: /img/ServiceSettings.PNG
 
 - V nastavení aplikace přejít do části **Authentication** a nastavit požadované typy autentikace. Pokud je plánováno ověřovat se do aplikace přes SSO, pak je nutné nastavit Windows autentikaci na **Enabled**
 
-.. image:: /img/Authentication.png
+.. image:: /img/Authentication.PNG
 
 Instalace certifikátů
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -166,7 +166,7 @@ Manuální instalace
 
 - Do konzole přidat přes **Menu** -> **Add/Remove Snap-in...** položku **Certificates** pro tento počítač
 
-.. image:: /img/Cert1.png
+.. image:: /img/Cert1.PNG
 
 - Zobrazí se seznam instalovaných certifikátů v tomto počítači
 
@@ -174,13 +174,13 @@ Manuální instalace
 
 - Naimportovat certifikát **DC3CACert.cer**
 
-.. image:: /img/Cert2.png
+.. image:: /img/Cert2.PNG
 
 - V levé části rozkliknout větev **Personal** -> **Pravé tlačítko** -> **All Tasks** -> **Import..**
 
 - Naimportovat certifikát **DC3WorkerCert.pfx**. Heslo k certifikátu je uloženo v souboru **InstallCert.cmd**
 
-.. image:: /img/Cert3.png
+.. image:: /img/Cert3.PNG
 
 Vygenerování databáze
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -210,4 +210,4 @@ Pokud byl správně dodržen výše uvedený postup instalace, měla by být apl
 
 \* Adresa uvedená při konfiguraci IIS.
 
-.. image:: /img/DC3.png
+.. image:: /img/DC3.PNG
