@@ -24,7 +24,7 @@ obsahující instalační soubory.
 
 - Celý obsah adresáře zkopírujte na disk na produkčním serveru. Obvykle **C:\\Program Files\\DataCentrum\\DC3**
 
-.. image:: /img/SetupFiles.png
+.. image:: /img/SetupFiles.PNG
 
 Certifikáty
 -------------
@@ -32,7 +32,7 @@ Certifikáty
 Dále je nutné nakopírovat na produkční server adresář s certifikáty, které jsou použity pro běh interní služby zajišťující práci s databází.
 Instalace cetifikátů je popsána v následující kapitole
 
-.. image:: /img/CertFiles.png
+.. image:: /img/CertFiles.PNG
                  
 Instalace DC3 Worker Service
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
