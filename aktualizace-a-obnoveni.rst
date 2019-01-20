@@ -27,8 +27,9 @@ Pro standartní aktualizaci DC3 na novější verzi postupujte podle následují
 2. Stopnout aplikační pool na IIS **DC3Pool**.
 3. Rozbalit někam na disk aktualizační balíček (obvykle Main.zip).
 4. Přehrát všechny soubory z balíčku.
-5. Spustit aplikační pool na IIS **DC3Pool** a službu **DC3 Worker host service** přesně v tomto pořadí.
-6. Zkontrolovat aplikační **Event viewer** a nejnovější záznamy v tabulce TraceLog. Pokud vše proběhlo v pořádku, aplikace se spustí bez chyb.
+5. Spustit DC.DC3.exe a počkat až doběhne. V případě chyby dále nepokračovat a chybu nejprve vyřešit.
+6. Spustit aplikační pool na IIS **DC3Pool** a službu **DC3 Worker host service** přesně v tomto pořadí.
+7. Zkontrolovat aplikační **Event viewer** a nejnovější záznamy v tabulce TraceLog. Pokud vše proběhlo v pořádku, aplikace se spustí bez chyb.
 
 .. warning:: V případě že by součástí akutalizačního balíčku byly soubory **appsettings.json** nebo **DC.DC3.Service.exe.config**, nesmí být tyto
              soubory přehrány, ale musí být přehrát pouze část jejich obsahu. O tom, co přehrát se poraďte s konzultantem spol. DATACENTRUM systems & consulting, a.s.
