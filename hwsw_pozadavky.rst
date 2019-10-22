@@ -34,10 +34,8 @@ Aplikační server
 
 Před vlastní instalací je nutné se ujistit, zda jsou na aplikačním serveru nainstalovány následující komponenty:
 
-- Microsoft .NET Framework verze 4.7 (`odkaz ke stažení <https://download.microsoft.com/download/D/D/3/DD35CC25-6E9C-484B-A746-C5BE0C923290/NDP47-KB3186497-x86-x64-AllOS-ENU.exe>`__)
-- .NET Core 2.2 Windows Hosting installer (`odkaz ke stažení <https://dotnet.microsoft.com/download/thank-you/dotnet-runtime-2.2.2-windows-hosting-bundle-installer>`__)
-- SQLSysClrTypes-x64.msi (`odkaz ke stažení <http://go.microsoft.com/fwlink/?LinkID=188392&clcid=0x409>`__)
-- ReportViewer.msi (`odkaz ke stažení <https://www.microsoft.com/en-us/download/details.aspx?id=45496>`__)
+- Microsoft .NET Framework verze 4.7.2 (`odkaz ke stažení <https://dotnet.microsoft.com/download/thank-you/net472>`__)
+- .NET Core 2.2 Windows Hosting installer (`odkaz ke stažení <https://dotnet.microsoft.com/download/thank-you/dotnet-runtime-2.2.7-windows-hosting-bundle-installer>`__)
 
 Aplikační server dále musí být nakonfigurován v roli **Web server (IIS)**. V této roli je třeba zapnout minimálně následující balíčky:
 
