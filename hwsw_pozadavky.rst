@@ -16,6 +16,14 @@ Pro její běh je nutné splnit některé minimální HW a SW požadavky na stra
 Databázový server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+###### HW
+Doporučená konfigurace pro databázový server je
+
+ - 4 CPU
+ - RAM 6 GB a vyšší
+ - HDD min. 100 GB (DB + zálohy)
+ 
+###### SW
 Momentálně jsou podporovány následující databázové stroje:
 
 - Microsoft SQL Server 2008+
