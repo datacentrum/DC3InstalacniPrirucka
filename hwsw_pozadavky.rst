@@ -51,6 +51,8 @@ Doporučená konfigurace pro aplikační server je
  - HDD min. 60 GB
  - OS MS Windows Server 2016 a vyšší
 
+SW
+---------
 Před vlastní instalací je nutné se ujistit, zda jsou na aplikačním serveru nainstalovány následující komponenty:
 
 - Microsoft .NET Framework verze 4.7.2 (`odkaz ke stažení <https://dotnet.microsoft.com/download/thank-you/net472>`__)
