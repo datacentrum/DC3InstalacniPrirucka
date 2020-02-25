@@ -16,7 +16,8 @@ Pro její běh je nutné splnit některé minimální HW a SW požadavky na stra
 Databázový server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-###### HW
+HW
+----------
 Doporučená konfigurace pro databázový server je
 
  - 4 CPU
