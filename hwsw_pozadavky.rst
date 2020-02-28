@@ -9,6 +9,8 @@ Minimální HW a SW požadavky
 Aplikace DC3 je webová aplikace běžící na webovém serveru IIS a v prostředí .NET a využívající relační databázi jako zdroj dat. 
 Pro její běh je nutné splnit některé minimální HW a SW požadavky na straně databázových a aplikačních (webových) serverů.
 
+.. note:: Aplikaci DC3 je možné provozovat jak na jednom serveru společně s databází MS SQL, tak na oddělených serverech pro databázi a aplikaci. Záleží na rozhodnutí zákazníka, jak chce mít řešenou architekturu a také na předpokládaném zatížení. U zákazníků, kde se předpokládá vyšší zátěž a přenosy dat je doporučeno mít DB odděleně od aplikačního serveru. 
+
 .. contents:: V této části:
   :local:
   :depth: 1
