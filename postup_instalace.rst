@@ -19,8 +19,7 @@ V případě, že potřebujete provést aktualizaci aplikace nebo obnovení ze z
 Instalační soubory
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Přehlad zdrojových kódů aplikace zajišťují automatizované buildy v prostředí Microsoft Team Foundation Server, jejichž výsledkem je zkompilovaný adresář **Main**,
-obsahující instalační soubory.
+Překlad zdrojových kódů aplikace zajišťují automatizované buildy v prostředí Microsoft Azure DevOps, jejichž výsledkem je zkompilovaný adresář **Main**, obsahující instalační soubory.
 
 - Celý obsah adresáře zkopírujte na disk na produkčním serveru. Obvykle **C:\\Program Files\\DataCentrum\\DC3**
 
@@ -135,10 +134,6 @@ DC3 je webová aplikace a potřebuje pro svůj běh webový server. Následujíc
 
 .. image:: /img/AddApp2.PNG
 
-- Otevřít soubor **DC.DC3.Service.exe.config** a nastavit v něm stejnou URL pod kterou poběží webová aplikace (typicky http://localhost/DC3).
-
-.. image:: /img/ServiceSettings.PNG
-
 - V nastavení aplikace přejít do části **Authentication** a nastavit požadované typy autentikace. Pokud je plánováno ověřovat se do aplikace přes SSO, pak je nutné nastavit Windows autentikaci na **Enabled**
 
 .. image:: /img/Authentication.PNG
@@ -199,7 +194,14 @@ Vygenerování databáze
 
 - Po doběhnutí je DB připravena ke spuštění DC3.
 
-Spuštění služeb
+Konfigurace služby DC.DC3.Service
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Součástí aplikace je služba výše nainstalovaná DC3 Worker host service. Pro tuto službu je nutné zadat do konfigurace URL cestu, kde je hostována IIS webová aplikace DC3.
+
+- Otevřít soubor **appsettings.json**
+- Do sekce **ServiceSettings** -> **ApplicationBaseUrl** doplnit URL pod kterou je nakonfigurována DC3 na IIS (typicky http://localhost/DC3)
+
+Spuštění aplikace a služby
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Pokud byl správně dodržen výše uvedený postup instalace, měla by být aplikace DC3 připravena ke spuštění.
