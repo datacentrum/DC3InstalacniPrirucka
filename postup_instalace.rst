@@ -37,19 +37,19 @@ Instalace DC3 Worker Service
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Součástí DC3 je Windows služba, která zajišťuje veškeré úlohy běžící na pozadí systému např. spouštění plánovaných úloh (DbModulů) nebo rozesílání notifikací.
-Službu je nutné nainstalovat do systému pomocí .NET Utility **InstallUtil.exe**.
+Službu je nutné nainstalovat do systému pomocí Utility **SC.exe**.
 
-- Stisknout klávesu **Win + R** ->  zadat **cmd** a spustit tak příkazový řádek.
+- Spustit tak příkazový řádek s právy **správce**.
 
-.. image:: /img/RunCmd.PNG
+.. image:: /img/CmdAdmin.PNG
 
-- V příkazovém řádku přejít do adresáře **C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319**
+- V příkazovém řádku přejít do adresáře s **nakopírovanými soubory DC3**.
 
-.. image:: /img/Cmd.PNG
+- Pomocí **SC.exe** nainstalovat službu **DC.DC3.Service.exe** umístěnou v instalačním adresáři DC3.
 
-- Pomocí **InstalUtil.exe** nainstalovat službu **DC.DC3.Service.exe** umístěnou v instalačním adresáři DC3.
+- Instalaci provedeme zadáním příkazu ve tvaru **sc create DC3WorkerHost binPath= "C:\\Program Files\DataCentrum\DC3\DC.DC3.Service.exe" DisplayName= "DC3 Worker Host Service"**
 
-.. image:: /img/InstsallUtil.PNG
+.. image:: /img/SC.PNG
 
 - Služba byla úspěšně naistalována a objeví se v seznamu Windows služeb.
 
