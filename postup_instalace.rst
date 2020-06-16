@@ -55,6 +55,10 @@ Službu je nutné nainstalovat do systému pomocí Utility **SC.exe**.
 
 .. image:: /img/Services.PNG
 
+- Pomocí pravého tlačítka -> Vlastnosti ještě nastavit, aby se služba spouštěla automaticky (výchozí je Manual).
+
+.. image:: /img/Automatic.PNG
+
 .. _pripojeni_label:
 
 Konfigurace připojení k DB
