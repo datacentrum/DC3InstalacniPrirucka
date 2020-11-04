@@ -19,7 +19,7 @@ V případě, že potřebujete provést aktualizaci aplikace nebo obnovení ze z
 Instalační soubory
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Překlad zdrojových kódů aplikace zajišťují automatizované buildy v prostředí Microsoft Azure DevOps, jejichž výsledkem je zkompilovaný adresář **Main**, obsahující instalační soubory.
+Překlad zdrojových kódů aplikace zajišťují automatizované buildy v prostředí Microsoft Azure DevOps, jejichž výsledkem je zkompilovaný adresář **DC3**, obsahující instalační soubory.
 
 - Celý obsah adresáře zkopírujte na disk na produkčním serveru. Obvykle **C:\\Program Files\\DataCentrum\\DC3**
 
@@ -115,6 +115,7 @@ DC3 umožňuje zasílat mailové notifikace a jiné zprávy. Pro využití této
 
 .. image:: /img/smtp.PNG
 
+
 Konfigurace IIS
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -198,12 +199,21 @@ Vygenerování databáze
 
 - Po doběhnutí je DB připravena ke spuštění DC3.
 
+Konfigurace PublicUrl
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Do konfiguračního souboru **appsettings.json** je třeba dále doplnit URL, pod kterou se bude na aplikaci přistupovat.
+
+- Otevřít soubor **appsettings.json**
+- Do sekce **AppSettings** -> **PublicUrl** doplnit URL, pod kterou se bude na aplikaci přistupovat (např. https://muj-server.cz/DC3). 
+
+.. image:: /img/PublicUrl.PNG
+
 Konfigurace služby DC.DC3.Service
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Součástí aplikace je služba výše nainstalovaná DC3 Worker host service. Pro tuto službu je nutné zadat do konfigurace URL cestu, kde je hostována IIS webová aplikace DC3.
 
 - Otevřít soubor **appsettings.json**
-- Do sekce **ServiceSettings** -> **ApplicationBaseUrl** doplnit URL pod kterou je nakonfigurována DC3 na IIS (typicky http://localhost/DC3)
+- Do sekce **ServiceSettings** -> **ApplicationBaseUrl** doplnit URL, pod kterou je nakonfigurována DC3 na IIS (typicky http://localhost/DC3)
 
 .. image:: /img/SluzbaConfig3.PNG
 
