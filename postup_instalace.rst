@@ -215,7 +215,7 @@ Součástí aplikace je služba výše nainstalovaná DC3 Worker host service. P
 - Otevřít soubor **appsettings.json**
 - Do sekce **ServiceSettings** -> **ApplicationBaseUrl** doplnit URL, pod kterou je nakonfigurována DC3 na IIS (typicky http://localhost/DC3)
 
-.. image:: /img/SluzbaConfig3.PNG
+.. image:: /img/ServiceUrl.PNG
 
 Spuštění aplikace a služby
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
