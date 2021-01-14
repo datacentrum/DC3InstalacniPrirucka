@@ -30,7 +30,7 @@ SW
 ---------
 Momentálně jsou podporovány následující databázové stroje:
 
-- Microsoft SQL Server 2012+
+- Microsoft SQL Server 2016+
 - Microfost SQL Azure
 - Oracle 12c+ 
 
