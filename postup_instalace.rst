@@ -193,7 +193,7 @@ Vygenerování databáze
 
 - V příkazovém řádku přejít do adresáře s instalačními soubory DC3.
 
-- Zadat příkaz **DC.DC3.exe dc3 updateDatabase InitDatabase,DCTest,Reindex** (část příkazu za InitDatabase se může lišit v závislosti na vybraném zákazníkovi).
+- Zadat příkaz **DC.DC3.exe updateDatabase InitDatabase,DCTest,Reindex** (část příkazu za InitDatabase se může lišit v závislosti na vybraném zákazníkovi).
 
 - Příkaz spustí vygenerování prázdné databáze (příkaz InitDatabase) a náseldné plnění daty specifickými pro zákazníka (DCTest). Nakonec je spuštěn reindex databáze.
 
