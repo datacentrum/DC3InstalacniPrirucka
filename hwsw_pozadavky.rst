@@ -57,7 +57,7 @@ SW
 ---------
 Před vlastní instalací je nutné se ujistit, zda jsou na aplikačním serveru nainstalovány následující komponenty:
 
-- ASP.NET Core Runtime 7.0.9 Windows Hosting Bundle (`odkaz ke stažení <https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-7.0.9-windows-hosting-bundle-installer>`__)
+- ASP.NET Core Runtime 8.0.4 Windows Hosting Bundle (`odkaz ke stažení <https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-8.0.4-windows-hosting-bundle-installer>`__)
 
 .. note:: V případě, že je v aplikaci DC3 využíván modul pro přímé skenování dokumentů **DC.DC3.Worker.ScanProcess** je třeba mít na aplikačním serveru nainstalovaný také plný .NET Framework 4.7.2 (`odkaz ke stažení <https://dotnet.microsoft.com/download/thank-you/net472>`__).
 
